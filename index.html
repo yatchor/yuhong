@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>臭小子，让你下次敢不敢？</title>  
+    <script>  
+        function showAlerts(messages, index) {  
+            if (index < messages.length) {  
+                alert(messages[index]);  
+                // 递归调用，索引加1  
+                setTimeout(function() { showAlerts(messages, index + 1); }, 1000);  
+            }  
+        }  
+  
+        window.onload = function() {  
+            // 定义要显示的消息数组  
+            var messages = ["于弘臭小子！你敢不回？", "真的敢吗?", "说说为什么敢", "勇气是从哪来的", "谁给你的勇气","说！为什么不理我", "不理我是恨我吗？", "真的恨我？","为什么恨我？", "说出来很难吗？", "快说为什么","不许敷衍！","好好认真说一遍","你认真吗？", "下次不敢？","哼哼！","原谅你喽！","下次再不理我的话","有你好看！！！","你看着办吧！","嘻嘻……", "哈哈，此次是测试","我知道的","我……","哈哈哈啊……","别当真喽","嘻嘻……"];  
+            // 调用函数，从索引0开始  
+            showAlerts(messages, 0);  
+        };  
+    </script>  
+</head>  
+<body>  
+  
+<h2>网页加载后会持续弹出不同内容的对话框</h2>  
+  
+</body>  
+</html>
